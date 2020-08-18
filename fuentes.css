@@ -1,0 +1,233 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-image: url(fondo2.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+header:not(.headEcu) {
+    background-color: #739aafab;
+    text-align: left;
+    padding: 2%;
+    background-attachment: scroll;
+    border-bottom: 1px black solid;
+}
+
+.seccion p {
+    font-size: 30px;
+}
+
+.seccion {
+    width: 70%;
+    height: 40vw;
+    float: left;
+}
+
+.columna {
+    width: 29%;
+    height: 40vw;
+    float: left;
+    height: 100%;
+    background-color: rgba(85, 81, 81, 0.363);
+    color: blanchedalmond;
+    border: 1px solid black;
+}
+
+.menu {
+    background: rgba(29, 158, 218, 0.849);
+    height: 5%;
+}
+
+.menu ul {
+    margin: 0;
+    height: 100%;
+    padding-left: 0;
+}
+
+.opciones,
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.articulo {
+    height: 76%;
+    background-color: rgba(85, 81, 81, 0.363);
+    padding: 2%;
+    border: 1px solid;
+    text-align: center;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.menu li {
+    margin-top: 1%;
+    height: 80%;
+    font-size-adjust: 10px;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.pie {
+    /*border: 1px solid;*/
+    padding: 2%;
+    color: blanchedalmond;
+    text-align: center;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.747);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.23;
+}
+
+.columna h2 {
+    padding-left: 2%;
+}
+
+.columna h3 {
+    padding-left: 4%;
+}
+
+span {
+    float: left;
+    margin-left: 20%;
+    color: rgba(233, 183, 47, 0.808);
+}
+
+.Ecu {
+    background: rgba(29, 158, 218, 0.61);
+}
+
+.headEcu {
+    background: rgba(233, 183, 47, 0.199);
+    text-align: left;
+    padding: 2%;
+    background-attachment: scroll;
+    border-bottom: 1px black solid;
+}
+
+@media screen and (max-width: 800px) {
+    .temas {
+        height: 100%;
+    }
+    .temas p {
+        font-size: 20px;
+    }
+    .seccion {
+        width: 96%;
+        height: 50%;
+    }
+    .opciones {
+        font-size: 16px;
+    }
+    .articulo {
+        width: 100%;
+        height: 50%;
+    }
+    .columna {
+        width: 100%;
+        height: 20%;
+    }
+    .columna h2 h3 {
+        font-size: 15px;
+    }
+    .columna a {
+        font-size: 13px;
+    }
+    .columna h2 {
+        margin: 0;
+    }
+    .columna h3 {
+        margin: 0;
+    }
+    .columna nav {
+        height: 50%;
+    }
+    .columna ul {
+        margin-top: 1%;
+        margin-bottom: 0;
+    }
+    .seccion p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu ul {
+        margin: 0;
+        height: 100%;
+    }
+    .temas {
+        font-size: 25px;
+    }
+    .seccion p:not(.temas) {
+        font-size: 12px;
+    }
+    .columna h2 h3 {
+        font-size: 12px;
+    }
+    .columna a {
+        font-size: 12px;
+    }
+    .opciones {
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .articulo {
+        width: 100%;
+        height: 100%;
+    }
+    .seccion {
+        width: 96%;
+        height: 50%;
+    }
+    .menu li {
+        margin-top: 1%;
+        height: 80%;
+        font-size-adjust: 10px;
+        color: white;
+        list-style: none;
+        display: inline-block;
+        margin-left: 2%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    a {
+        font-size: 5px;
+    }
+}
